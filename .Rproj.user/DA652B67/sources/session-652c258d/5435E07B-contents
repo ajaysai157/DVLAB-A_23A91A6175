@@ -1,0 +1,27 @@
+#Load the Data
+data(iris)
+#Understand the Data
+str(iris)
+View(iris)
+class(iris)
+?iris
+#Basic box plot
+
+boxplot(iris$Sepal.Length) 
+
+boxplot(iris$Sepal.Length,
+        main = "Box plot for Sepal Length",
+        ylab = "Sepal_length",
+        col = "skyblue")
+
+boxplot(Sepal.Length ~ Species,
+        data = iris,
+        main = "Sepal Length By Species",
+        xlab = "Species",
+        ylab = "Sepal Length",
+        col = c("pink","green","skyblue"))
+
+boxplot(iris,
+        main = "Multi Variable Box Plot",
+        col = c("pink","green","skyblue","orange"))
+
