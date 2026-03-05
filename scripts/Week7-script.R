@@ -14,3 +14,7 @@ par(mfrow=c(1,2))
 mosaicplot(HairEyeColor[,,"Male"],main="Male",color=TRUE)
 mosaicplot(HairEyeColor[,,"Female"],main="Female",color=TRUE)
 par(mfrow=c(1,1))
+
+install.packages("vcd")
+library(vcd)
+mosaic(HairEyeColor,shape=TRUE,legend=TRUE,main="Shaped Mosaic Plot")
